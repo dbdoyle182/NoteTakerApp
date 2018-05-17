@@ -1,0 +1,11 @@
+.navbar {
+    height: 50px;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
