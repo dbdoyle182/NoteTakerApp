@@ -45,8 +45,8 @@
 
 .panel p {
     text-transform: uppercase;
-    font-family: 'Amatic SC', cursive;
-    text-shadow: 0 0 4px rgba(0,0,0, 0.75), 0 0 14px rgba(0,0,0, 0.45)
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
 }
 
 .panel p:nth-child(2) {
@@ -56,4 +56,15 @@
 .panel.open {
     flex: 5;
     font-size: 40px;
+}
+
+
+.top {
+    font-size: 14px;
+    background-color: rgba(0,0,0, 0.25)
+}
+
+.bottom {
+    font-size: 14px;
+    background-color: rgba(0,0,0, 0.25)
 }
