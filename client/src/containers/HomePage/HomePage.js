@@ -41,7 +41,7 @@ class HomePage extends Component {
                     : "panel panel1 open" 
                     : "panel panel1"} onClick={this.toggleOpen} onTransitionEnd={this.toggleActive}>
                         <p className='top'>The Array.prototype property represents the prototype for the Array constructor and allows you to add new properties and methods to all Array objects.</p>
-                        <p>Notes</p>
+                        <p className='title'>Notes</p>
                         <p className='bottom'>The Array.prototype property represents the prototype for the Array constructor and allows you to add new properties and methods to all Array objects.</p>
                     </div>
                     <div className={this.state.open && this.state.currentPanel === "That" ? 
@@ -49,7 +49,7 @@ class HomePage extends Component {
                     : "panel panel2 open" 
                     : "panel panel2"} onClick={this.toggleOpen} onTransitionEnd={this.toggleActive}>
                         <p></p>
-                        <p>That</p>
+                        <p className='title'>That</p>
                         <p></p>
                     </div>
                     <div className={this.state.open && this.state.currentPanel === "Follow" ? 
@@ -57,7 +57,7 @@ class HomePage extends Component {
                     : "panel panel3 open" 
                     : "panel panel3"} onClick={this.toggleOpen} onTransitionEnd={this.toggleActive}>
                         <p></p>
-                        <p>Follow</p>
+                        <p className='title'>Follow</p>
                         <p></p>
                     </div>
                     <div className={this.state.open && this.state.currentPanel === "You" ? 
@@ -65,7 +65,7 @@ class HomePage extends Component {
                     : "panel panel4 open" 
                     : "panel panel4"} onClick={this.toggleOpen} onTransitionEnd={this.toggleActive}>
                         <p></p>
-                        <p>You</p>
+                        <p className='title'>You</p>
                         <p></p>
                     </div>
                 </div>

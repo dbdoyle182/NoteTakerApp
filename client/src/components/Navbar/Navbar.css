@@ -1,6 +1,9 @@
 .navbar {
     height: 50px;
     background-color: black;
+    padding-inline-start: 2%;
+    padding-inline-end: 2%;
+    justify-content: center;
 }
 
 a {
@@ -8,4 +11,17 @@ a {
     font-size: 36px;
     color: white;
     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.dynav {
+    float: right;
+    margin-right: 2%
+}
+
+.apptitle{
+    font-size: 36px;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    justify-content: center;
+    text-align: center
 }
