@@ -24,10 +24,15 @@
   },
   "homepage": "https://github.com/dbdoyle182/NoteTakerApp#readme",
   "dependencies": {
+    "@okta/jwt-verifier": "0.0.12",
+    "@okta/oidc-middleware": "^0.1.2",
+    "@okta/okta-react": "^1.0.2",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "compression": "^1.7.2",
+    "cors": "^2.8.4",
     "express": "^4.16.3",
+    "express-session": "^1.15.6",
     "mongoose": "^5.1.1",
     "morgan": "^1.9.0",
     "validator": "^10.2.0"
