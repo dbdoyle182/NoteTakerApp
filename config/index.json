@@ -1,0 +1,4 @@
+{
+  "dbUri": "mongodb://localhost/newnoteapp",
+  "jwtSecret": "a secret phrase!!"
+}

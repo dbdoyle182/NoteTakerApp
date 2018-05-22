@@ -13,7 +13,17 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Add routes, both API and view
+// Authentication and passport utilization
+
+app.use(passport.initialize());
+
+const localSignupStrategy = require("./authentication/passport/local-signup");
+const localLoginStrategy = require("./authentication/passport/local-login");
+passport.use("local-signup", localSignupStrategy);
+passport.use("local-login", localLoginStrategy);
+
+const authCheckMiddleware = require("./authentication/middleware/auth-check");
+app.use("/api", authCheckMiddleware);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("./client/build/"));
