@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import LoginForm from "../components/LoginForm";
-import Auth from "../utils/Auth";
+import LoginForm from "../../components/LoginForm";
+import Auth from "../../utils/Auth";
 
 class LoginPage extends Component {
   constructor(props, context) {

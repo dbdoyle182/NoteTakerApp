@@ -1,13 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-
+const passport = require('passport');
 const mongoose = require("mongoose");
 const morgan = require("morgan");
-
+const config = require('./config')
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-
+require("./models").connect(process.env.MONGODB_URI || config.dbUri);
 
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -30,6 +30,11 @@ if (process.env.NODE_ENV === "production") {
 } else {
   app.use(express.static("./client/public/"));
 }
+
+const user = require('./routes/user.js')
+app.use(user)
+
+mongoose.set('debug', true);
 
 
 // start the server
