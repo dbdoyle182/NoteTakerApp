@@ -25,6 +25,11 @@ passport.use("local-login", localLoginStrategy);
 const authCheckMiddleware = require("./authentication/middleware/auth-check");
 app.use("/api", authCheckMiddleware);
 
+const authRoutes = require("./routes/auth");
+const apiRoutes = require("./routes/api");
+app.use("/auth", authRoutes);
+app.use("/api", apiRoutes);
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("./client/build/"));
 } else {
