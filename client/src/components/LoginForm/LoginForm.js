@@ -5,10 +5,10 @@ import PropTypes from "prop-types";
 import "./LoginForm.css";
 
 const LoginForm = ({ onSubmit, onChange, errors, successMessage, user }) => (
-  <Card className="container login-page">
+  <Card>
     <form action="/" onSubmit={onSubmit}>
-      <div className="field-container">
-        <h2 className="card-heading">Login</h2>
+      <div>
+        <h2>Login</h2>
 
         {successMessage && <p className="success-message">{successMessage}</p>}
         {errors.summary && <p className="error-message">{errors.summary}</p>}
@@ -35,7 +35,7 @@ const LoginForm = ({ onSubmit, onChange, errors, successMessage, user }) => (
         </div>
 
         <div className="button-line">
-          <button type="submit" label="log in">
+          <button type="submit" label="log in" className="submitbtn" >
             Log In
           </button>
         </div>

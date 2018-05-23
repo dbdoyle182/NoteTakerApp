@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import LoginForm from "../../components/LoginForm";
 import Auth from "../../utils/Auth";
+import './LoginPage.css';
 
 class LoginPage extends Component {
   constructor(props, context) {
@@ -78,13 +79,15 @@ class LoginPage extends Component {
 
   render() {
     return (
-      <LoginForm
-        onSubmit={this.processForm}
-        onChange={this.changeUser}
-        errors={this.state.errors}
-        user={this.state.user}
-        successMessage={this.state.successMessage}
-      />
+      <div className="formpage">
+        <LoginForm
+          onSubmit={this.processForm}
+          onChange={this.changeUser}
+          errors={this.state.errors}
+          user={this.state.user}
+          successMessage={this.state.successMessage}
+        />
+      </div>
     );
   }
 }

@@ -1,0 +1,41 @@
+.submitbtn {
+    display: inline-block;
+    margin: 1em;
+    text-transform: uppercase;
+    padding: 1em 1.5em;
+    background: none;
+    color:darkblue;  
+    font-weight: bold;
+    position: relative;
+    transition:color 0.25s ease;
+    border:3px solid rgb(209, 27, 27);
+}
+.submitbtn:hover {
+    border: black 1px solid;
+}
+
+.submitbtn::after {
+    position: absolute;
+    content: '';
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transform-origin:left;
+    transition:width 0.25s ease;
+    z-index:-1;
+  }
+
+  .submitbtn::after {
+    position: absolute;
+    content: '';
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transform-origin:left;
+    transition:width 0.25s ease;
+    z-index:-1;
+  }
