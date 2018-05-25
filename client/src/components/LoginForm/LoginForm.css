@@ -1,41 +1,36 @@
 .submitbtn {
-    display: inline-block;
-    margin: 1em;
-    text-transform: uppercase;
-    padding: 1em 1.5em;
-    background: none;
-    color:darkblue;  
-    font-weight: bold;
-    position: relative;
-    transition:color 0.25s ease;
-    border:3px solid rgb(209, 27, 27);
-}
-.submitbtn:hover {
-    border: black 1px solid;
-}
-
-.submitbtn::after {
-    position: absolute;
-    content: '';
-    top:0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: white;
-    transform-origin:left;
-    transition:width 0.25s ease;
-    z-index:-1;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    margin:0 auto;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    border: 1px solid #000;
+    color:#000;
+    background-image: linear-gradient(to right, #fff 50%, #000 50%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+  }
+   
+  .submitbtn:hover {
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    /** START THE FINAL STATE STYLING **/
+    background-position: bottom right;
+    color: #fff;
   }
 
-  .submitbtn::after {
-    position: absolute;
-    content: '';
-    top:0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: white;
-    transform-origin:left;
-    transition:width 0.25s ease;
-    z-index:-1;
+  .form-content {
+      justify-content: center;
+      text-align: center;
+      font-family: 'Open Sans Condensed', sans-serif;
   }

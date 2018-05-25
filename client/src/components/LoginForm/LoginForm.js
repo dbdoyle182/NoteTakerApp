@@ -7,7 +7,7 @@ import "./LoginForm.css";
 const LoginForm = ({ onSubmit, onChange, errors, successMessage, user }) => (
   <Card>
     <form action="/" onSubmit={onSubmit}>
-      <div>
+      <div className="form-content">
         <h2>Login</h2>
 
         {successMessage && <p className="success-message">{successMessage}</p>}
