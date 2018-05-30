@@ -26,10 +26,10 @@ const UserSchema = new Schema({
     default: Date.now
   },
   //Keep track of all posts associated with a given user
-  posts: [
+  notes: [
     {
       type: Schema.Types.ObjectId,
-      ref: "Comment"
+      ref: "Note"
     }
   ]
 });
